@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+}
+
+.register{
+    text-align: center;
+}
+
+.form-box{
+    width: 40vw;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 20vh; */
+    align-items: center;
+}
+
+input{
+    width: 20vw;
+    height: 30px;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+input:hover{
+    background-color: rgb(250, 248, 248);
+}
+
+label{
+    width: 11vw;
+    font-size: large;
+    /* font-family: "PT Serif", serif; */
+}
+
+.signup-label{
+    width: 16vw;
+}
+
+.error{
+    color: red;
+}
+
+.label-input{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    position: relative;
+}
+/* 
+button{
+    margin: 10px;
+    width: 6vw;
+    border-radius: 10px;
+    border-color: green;
+    border-width: 3px;
+    background-color: lightgreen;
+    height: 35px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(117, 235, 117);
+} */
+
+/* body{
+    background-image: url("assets/IIT\ Indore\ BG.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+} */
+
+.bg{
+    /* font-size: xx-large; */
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.welcome-page{
+    width: 90vw;
+    height: 99vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-image{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(113, 190, 238);
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 40vw;
+}
+
+.account{
+    display: flex;
+    justify-content: space-around;
+    width: 18.5vw;
+    align-items: center;
+    color: rgb(111, 109, 109);
+    margin: 5px;
+}
+
+.sign{
+    color: red;
+    text-decoration: none;
+}
+
+.sign:hover{
+    color: hotpink;
+}
+
+.submit{
+    margin: 5px;
+    width: 6vw;
+    height: 28px;
+    background-color: rgb(38, 234, 58);
+    border-color: green;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.submit:hover{
+    background-color: rgb(13, 208, 13);
+}
+
+.logo{
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 27px;
+}
+
+.welcome{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: "PT Serif", serif;
+}
+.details{
+    font-size: large;
+    font-weight: 500;
+    font-family: "PT Serif", serif;
+}
+
+nav{
+    width: 98.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 40px;
+    /* background-color: aqua; */
+}
+
+.profile{
+    width: 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+}
+
+.logout{
+    height: 35px;
+    width: 80px;
+    background-color: rgb(242, 68, 68);
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: red;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout:hover{
+    background-color: rgb(218, 7, 7);
+}
+
+.welcome-logo{
+    width: 98.5vw;
+    display: flex;
+    height: 80vh;
+    align-items:center;
+    justify-content: center;
+    background-image: url("https://www.iiti.ac.in/public/themes/iitindore/demos/update-logo.png");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+}
+
+.container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    /* width: 80vw; */
+}
+
+.table{
+    position: absolute;
+    top: 100px;
+    width: 60vw;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+table{
+    width: 60vw;
+    border-collapse: collapse;
+    height: 400px;
+    position: relative;
+}
+
+thead{
+    background-color: rgb(199, 189, 189);
+    position: sticky;
+    top: 0;
+    z-index: 6;
+}
+
+tr{
+    display: flex;
+    border-bottom: 2px solid rgb(198, 195, 195);
+    text-align: center;
+}
+
+tr:hover{
+    background-color: rgb(229, 225, 225);
+    transition: background-color 0.5s;
+}
+
+td{
+    font-size: 18px;
+}
+
+td:nth-child(1){
+    flex: 1;
+}
+
+td:nth-child(2){
+    flex: 2;
+}
+
+td:nth-child(3){
+    flex: 1;
+}
+
+td:nth-child(4){
+    flex: 1;
+}
+
+th{
+    font-size: 20px;
+    text-align: center;
+}
+
+.search{
+    position: absolute;
+    left: 305px;
+    width: 500px;
+    top: 50px;
+    /* z-index: -1; */
+}
+
+
+
+

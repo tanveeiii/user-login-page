@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/design.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Welcome</h1>
+    <a href="{{url_for('login')}}"><button>Login</button></a>
+    <a href="{{url_for('signup')}}"><button>SignUp</button></a> -->
+    <div class="welcome-page">
+        <div class="login-image">
+            <img src="https://www.iiti.ac.in/public/themes/iitindore/demos/update-logo.png" width="500px" alt="">
+        </div>
+        <div class="login-box">
+            <div class="welcome">WELCOME</div>
+            <div class="details">Enter your details to login</div>
+            <div class="form-box">
+                <form class="form" method="POST" action="{{url_for('login')}}">
+                    <div class="label-input">
+                        <label for="userid">Enter your UserId</label>
+                        <input type="text" placeholder="userid" required name="userid">
+                        <img class="logo" src="/static/assets/user.png" alt="">
+                    </div>
+        
+                    <div class="label-input">
+                        <label for="password">Enter the password</label>
+                        <input type="password" placeholder="password" required name="password">
+                        <img src="/static/assets/padlock.png" class="logo" alt="">
+                    </div>
+        
+                    <!-- <div class="label-input">
+                        <label for="confirm">Retype the password to confirm</label>
+                        <input type="text" placeholder="Retype password" required name="confirm">
+                        <img src="/static/assets/password.png" class="logo" alt="">
+                    </div> -->
+        
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+                <div class="error">
+                    {% if error%}
+                    {{error}}
+                    {%endif%}
+                </div>
+                <div class="account">
+                    <div>Do not have an account?</div>
+                    <div><a class="sign" href="{{url_for('signup')}}">Sign up now</a></div>
+                    <img src="/static/assets/add-friend.png" width="27px" alt="">
+                </div>
+                
+        </div>
+    </div>
+</body>
+
+</html>
